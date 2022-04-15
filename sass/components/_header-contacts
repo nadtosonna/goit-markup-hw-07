@@ -1,9 +1,3 @@
-.logo .logo-black {
-  color: var(--logo-black-text-color);
-}
-.logo .logo-white {
-  color: var(--invert-text-color);
-}
 .contacts-header {
   display: flex;
   align-items: center;

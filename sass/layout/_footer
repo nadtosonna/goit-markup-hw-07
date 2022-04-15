@@ -58,7 +58,9 @@
 .networks-icon-footer {
   fill: var(--invert-text-color);
 }
-
+.networks-item:not(:last-child) {
+  margin-right: 10px;
+}
 .social-link-footer {
   display: flex;
   justify-content: center;

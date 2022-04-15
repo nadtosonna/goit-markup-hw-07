@@ -1,11 +1,11 @@
-@import 'base/_variables';
-@import 'base/_common';
+@import 'utils/_variables';
 @import 'utils/_visually-hidden';
+@import 'base/_common';
 @import 'components/_container';
-@import 'layout/_navigation';
 @import 'layout/_header';
-@import 'components/_header-contacts';
+@import 'layout/_navigation';
 @import 'components/_logo';
+@import 'components/_header-contacts';
 @import 'layout/_hero';
 @import 'components/_hero-button';
 @import 'components/_features';

@@ -10,6 +10,20 @@
   --time-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -60,20 +74,6 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -85,6 +85,15 @@ header {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.container.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navigation {
@@ -141,20 +150,21 @@ header {
   background-color: var(--accent-color);
 }
 
-.container.header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.logo {
+  display: block;
+  margin-right: 93px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
 }
 
-.logo .logo-black {
+.logo--black {
   color: var(--logo-black-text-color);
 }
 
-.logo .logo-white {
+.logo--white {
   color: var(--invert-text-color);
 }
 
@@ -207,15 +217,6 @@ header {
 
 .contacts .link:hover .icon-header {
   fill: var(--accent-color);
-}
-
-.logo {
-  margin-right: 93px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
 }
 
 .filter {
@@ -414,6 +415,10 @@ header {
 
 .networks-icon-footer {
   fill: var(--invert-text-color);
+}
+
+.networks-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-link-footer {
