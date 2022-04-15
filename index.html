@@ -16,21 +16,24 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <header>
       <div class="container header-container">
-        <nav class="navigation-main">
+        <nav class="navigation">
           <a class="logo" lang="en" href="./index.html"
             >Web<span class="logo-black">Studio</span></a
           >
-          <ul class="navigation-titles">
-            <li class="item"><a href="./index.html" class="link current">Студия</a></li>
-            <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+          <ul class="navigation__titles">
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation__link current">Студия</a>
+            </li>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link">Портфолио</a>
+            </li>
+            <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
           </ul>
         </nav>
 
@@ -58,11 +61,11 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero-header">
+          <h1 class="hero__header">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -70,39 +73,39 @@
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="features">
-            <li class="features-list">
-              <svg class="icon-features" width="270" height="120">
+            <li class="features__list">
+              <svg class="features__icon" width="270" height="120">
                 <use href="./images/icons.svg#icon-Group-1"></use>
               </svg>
-              <h3 class="features-item">Внимание к деталям</h3>
-              <p class="features-description">
+              <h3 class="features__item">Внимание к деталям</h3>
+              <p class="features__description">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="features-list">
-              <svg class="icon-features" width="270" height="120">
+            <li class="features__list">
+              <svg class="features__icon" width="270" height="120">
                 <use href="./images/icons.svg#icon-Group-2"></use>
               </svg>
-              <h3 class="features-item">Пунктуальность</h3>
-              <p class="features-description">
+              <h3 class="features__item">Пунктуальность</h3>
+              <p class="features__description">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="features-list">
-              <svg class="icon-features" width="270" height="120">
+            <li class="features__list">
+              <svg class="features__icon" width="270" height="120">
                 <use href="./images/icons.svg#icon-Group-3"></use>
               </svg>
-              <h3 class="features-item">Планирование</h3>
-              <p class="features-description">
+              <h3 class="features__item">Планирование</h3>
+              <p class="features__description">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="features-list">
-              <svg class="icon-features" width="270" height="120">
+            <li class="features__list">
+              <svg class="features__icon" width="270" height="120">
                 <use href="./images/icons.svg#icon-Group-4"></use>
               </svg>
-              <h3 class="features-item">Современные технологии</h3>
-              <p class="features-description">
+              <h3 class="features__item">Современные технологии</h3>
+              <p class="features__description">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
@@ -110,27 +113,27 @@
 
           <h2 class="section-header">Чем мы занимаемся</h2>
           <ul class="work-examples">
-            <li class="item">
+            <li class="work-examples__item">
               <img src="./images/box-1.jpg" alt="Процесс написания кода" width="370" height="294" />
-              <div class="pannel">Десктопные приложения</div>
+              <div class="work-examples__pannel">Десктопные приложения</div>
             </li>
-            <li class="item">
+            <li class="work-examples__item">
               <img
                 src="./images/box-2.jpg"
                 alt="Процесс дизайна мобильного приложения"
                 width="370"
                 height="294"
               />
-              <div class="pannel">Мобильные приложения</div>
+              <div class="work-examples__pannel">Мобильные приложения</div>
             </li>
-            <li class="item">
+            <li class="work-examples__item">
               <img
                 src="./images/box-3.jpg"
                 alt="Матрица цветов на планшете"
                 width="370"
                 height="294"
               />
-              <div class="pannel">Дизайнерские решения</div>
+              <div class="work-examples__pannel">Дизайнерские решения</div>
             </li>
           </ul>
         </div>
@@ -140,17 +143,17 @@
         <div class="container">
           <h2 class="section-header">Наша команда</h2>
           <ul class="team">
-            <li class="team-member">
+            <li class="team__member">
               <img
                 src="./images/igor-demyanenko.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
                 height="260"
               />
-              <div class="team-description">
-                <h3 class="team-name">Игорь Демьяненко</h3>
-                <p class="team-job">Product Designer</p>
-                <ul class="networks">
+              <div class="team__description">
+                <h3 class="team__name">Игорь Демьяненко</h3>
+                <p class="team__job">Product Designer</p>
+                <ul class="team__networks">
                   <li class="networks-item">
                     <a href="" class="social-link">
                       <svg class="networks-icon" width="20" height="20">
@@ -182,12 +185,12 @@
                 </ul>
               </div>
             </li>
-            <li class="team-member">
+            <li class="team__member">
               <img src="./images/olha-repina.jpg" alt="Ольга Репина" width="270" height="260" />
-              <div class="team-description">
-                <h3 class="team-name">Ольга Репина</h3>
-                <p class="team-job">Frontend Developer</p>
-                <ul class="networks">
+              <div class="team__description">
+                <h3 class="team__name">Ольга Репина</h3>
+                <p class="team__job">Frontend Developer</p>
+                <ul class="team__networks">
                   <li class="networks-item">
                     <a href="" class="social-link">
                       <svg class="networks-icon" width="20" height="20">
@@ -219,17 +222,17 @@
                 </ul>
               </div>
             </li>
-            <li class="team-member">
+            <li class="team__member">
               <img
                 src="./images/nikolay-tarasov.jpg"
                 alt="Николай Тарасов"
                 width="270"
                 height="260"
               />
-              <div class="team-description">
-                <h3 class="team-name">Николай Тарасов</h3>
-                <p class="team-job">Marketing</p>
-                <ul class="networks">
+              <div class="team__description">
+                <h3 class="team__name">Николай Тарасов</h3>
+                <p class="team__job">Marketing</p>
+                <ul class="team__networks">
                   <li class="networks-item">
                     <a href="" class="social-link">
                       <svg class="networks-icon" width="20" height="20">
@@ -261,17 +264,17 @@
                 </ul>
               </div>
             </li>
-            <li class="team-member">
+            <li class="team__member">
               <img
                 src="./images/mikhail-ermakov.jpg"
                 alt="Михаил Ермаков"
                 width="270"
                 height="260"
               />
-              <div class="team-description">
-                <h3 class="team-name">Михаил Ермаков</h3>
-                <p class="team-job">UI Designer</p>
-                <ul class="networks">
+              <div class="team__description">
+                <h3 class="team__name">Михаил Ермаков</h3>
+                <p class="team__job">UI Designer</p>
+                <ul class="team__networks">
                   <li class="networks-item">
                     <a href="" class="social-link">
                       <svg class="networks-icon" width="20" height="20">
@@ -360,21 +363,21 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer-block">
+      <div class="container footer__block">
         <div class="contact-data">
-          <a class="logo footer-logo" lang="en" href="./index.html"
+          <a class="logo footer__logo" lang="en" href="./index.html"
             >Web<span class="logo-white">Studio</span></a
           >
-          <address class="address">
-            <p class="physical-address">г. Киев, пр-т Леси Украинки, 26</p>
-            <a class="footer-contact email" href="mailto:info@example.com">info@example.com</a>
-            <a class="footer-contact" href="tel:+380991111111">+38 099 111 11 11</a>
+          <address class="footer__details">
+            <p class="footer__address">г. Киев, пр-т Леси Украинки, 26</p>
+            <a class="footer__email" href="mailto:info@example.com">info@example.com</a>
+            <a class="footer__tel" href="tel:+380991111111">+38 099 111 11 11</a>
           </address>
         </div>
 
-        <div class="socials">
+        <div class="footer__socials">
           <p class="join">присоединяйтесь</p>
-          <ul class="networks">
+          <ul class="footer__networks">
             <li class="networks-item">
               <a href="" class="social-link-footer">
                 <svg class="networks-icon-footer" width="20" height="20">
