@@ -1,13 +1,13 @@
-.clients-list {
+.clients {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
 }
-.client:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
-.client-link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,21 +15,19 @@
   height: 92px;
   border: 1px solid var(--icon-basic-color);
   border-radius: 4px;
-
   transition: border 250ms var(--time-function);
 }
-.client-link:hover,
-.client-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border: 1px solid var(--accent-color);
 }
-.client-link:hover .client-icon {
+.clients__link:hover .clients__icon {
   fill: var(--accent-color);
 }
-.client-link:focus .client-icon {
+.clients__link:focus .clients__icon {
   fill: var(--accent-color);
 }
-.client-icon {
+.clients__icon {
   fill: var(--icon-basic-color);
-
   transition: fill 250ms var(--time-function);
 }
