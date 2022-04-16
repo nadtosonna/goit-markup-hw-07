@@ -5,13 +5,13 @@
 .work-examples__item {
   position: relative;
   margin-right: 30px;
-}
-.work-examples__item:nth-child(3) {
-  margin-right: 0;
+
+  &:nth-child(3) {
+    margin-right: 0;
+  }
 }
 .section-header {
   margin-bottom: 50px;
-
   color: var(--header-text-color);
   font-size: 36px;
   line-height: 1.16;

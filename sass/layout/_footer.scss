@@ -71,11 +71,11 @@
   background-color: rgba(255, 255, 255, 0.1);
 
   transition: background-color 250ms var(--time-function);
-}
 
-.social-link-footer:hover,
-.social-link-footer:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .footer-modal {
@@ -106,12 +106,12 @@
   border-radius: 4px;
 
   transition: border-color 250ms var(--time-function);
-}
 
-.footer-input:hover,
-.footer-input:focus-within {
-  outline: none;
-  border: 1px solid var(--accent-color);
+  &:hover,
+  &:focus-within {
+    outline: none;
+    border: 1px solid var(--accent-color);
+  }
 }
 
 .footer-button {

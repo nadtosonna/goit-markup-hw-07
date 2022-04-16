@@ -3,10 +3,11 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-}
-.clients__item:not(:last-child) {
-  margin-right: 30px;
-}
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  }
 .clients__link {
   display: flex;
   justify-content: center;
@@ -16,18 +17,21 @@
   border: 1px solid var(--icon-basic-color);
   border-radius: 4px;
   transition: border 250ms var(--time-function);
-}
-.clients__link:hover,
-.clients__link:focus {
-  border: 1px solid var(--accent-color);
-}
-.clients__link:hover .clients__icon {
-  fill: var(--accent-color);
-}
-.clients__link:focus .clients__icon {
-  fill: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
 .clients__icon {
   fill: var(--icon-basic-color);
   transition: fill 250ms var(--time-function);
+
+  .clients__link:hover & {
+    fill: var(--accent-color);
+  }
+  
+  .clients__link:focus & {
+    fill: var(--accent-color);
+  }
 }
